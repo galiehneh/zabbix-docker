@@ -1,6 +1,7 @@
 pip install docker-compose
 
 
+
 git clone https://github.com/galiehneh/zabbix-docker.git
 
 cd zabbix-docker/
@@ -8,6 +9,16 @@ cd zabbix-docker/
 git checkout 5.0
 
 docker-compose -f docker-compose_v3_ubuntu_mysql_latest.yaml up -d
+
+
+
+ufw allow 8081,8443/tcp
+
+ufw allow 162
+
+ufw allow 10050,10051,10052,10071/tcp
+
+ufw allow 10050,10051,10052,10071/udp
 
 
 
