@@ -1,8 +1,12 @@
 pip install docker-compose
 
+
 git clone https://github.com/galiehneh/zabbix-docker.git
+
 cd zabbix-docker/
+
 git checkout 5.0
+
 docker-compose -f docker-compose_v3_ubuntu_mysql_latest.yaml up -d
 
 
